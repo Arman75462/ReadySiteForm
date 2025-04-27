@@ -15,11 +15,11 @@ function ThankYou() {
       {/* Green Check Icon */}
       <CheckCircleOutlineIcon sx={{ fontSize: 80, color: "green", mb: 2 }} />
 
-      <Typography variant="h3" fontWeight="bold" mb={2}>
+      <Typography variant="h3" fontWeight="bold" mb={2} color="#0B1215">
         Merci pour votre confiance !
       </Typography>
 
-      <Typography variant="h6" color="textSecondary" mb={4}>
+      <Typography variant="h6" color="gray" mb={4}>
         Votre demande a été envoyée. Nous allons vous contacter très bientôt
         pour créer votre site web.
       </Typography>

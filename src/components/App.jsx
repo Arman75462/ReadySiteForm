@@ -9,6 +9,7 @@ function App() {
         variant="h3"
         fontWeight="bold"
         textAlign="center"
+        color="#0B1215"
         mt={4}
         mb={1}
       >
@@ -19,7 +20,7 @@ function App() {
       <Typography
         variant="h6"
         textAlign="center"
-        color="textSecondary"
+        color="gray"
         mb={4}
         sx={{ maxWidth: "600px", margin: "0 auto" }}
       >
@@ -45,7 +46,7 @@ function App() {
         }}
       >
         {/* Section Title */}
-        <Typography variant="h5" fontWeight="bold" mb={1}>
+        <Typography variant="h5" fontWeight="bold" mb={1} color="#0B1215">
           Informations de base
         </Typography>
         <TextField
@@ -88,8 +89,15 @@ function App() {
           variant="outlined"
           fullWidth
         />
+
         {/* Section Title */}
-        <Typography variant="h5" fontWeight="bold" mt={4} mb={1}>
+        <Typography
+          variant="h5"
+          fontWeight="bold"
+          mt={4}
+          mb={1}
+          color="#0B1215"
+        >
           Atmosphère et couleurs
         </Typography>
         <TextField
@@ -130,8 +138,15 @@ function App() {
           <MenuItem value="Light">Clair</MenuItem>
           <MenuItem value="Dark">Sombre</MenuItem>
         </TextField>
+
         {/* Section Title */}
-        <Typography variant="h5" fontWeight="bold" mt={4} mb={1}>
+        <Typography
+          variant="h5"
+          fontWeight="bold"
+          mt={4}
+          mb={1}
+          color="#0B1215"
+        >
           Informations sur l'entreprise
         </Typography>
         <TextField
@@ -165,8 +180,15 @@ function App() {
           variant="outlined"
           fullWidth
         />
+
         {/* Section Title */}
-        <Typography variant="h5" fontWeight="bold" mt={4} mb={1}>
+        <Typography
+          variant="h5"
+          fontWeight="bold"
+          mt={4}
+          mb={1}
+          color="#0B1215"
+        >
           Services et prix d'abonnements
         </Typography>
         <TextField
@@ -189,8 +211,15 @@ function App() {
           required
           fullWidth
         />
+
         {/* Section Title */}
-        <Typography variant="h5" fontWeight="bold" mt={4} mb={1}>
+        <Typography
+          variant="h5"
+          fontWeight="bold"
+          mt={4}
+          mb={1}
+          color="#0B1215"
+        >
           Heures d'ouverture
         </Typography>
         <TextField
@@ -208,8 +237,15 @@ function App() {
           variant="outlined"
           fullWidth
         />
+
         {/* Section Title */}
-        <Typography variant="h5" fontWeight="bold" mt={4} mb={1}>
+        <Typography
+          variant="h5"
+          fontWeight="bold"
+          mt={4}
+          mb={1}
+          color="#0B1215"
+        >
           Pages supplémentaires
         </Typography>
         <TextField
