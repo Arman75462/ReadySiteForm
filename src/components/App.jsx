@@ -34,7 +34,6 @@ function App() {
         method="POST"
         className="App__form"
         sx={{
-          backgroundColor: "#fafafa",
           padding: 4,
           borderRadius: 3,
           boxShadow: "0px 4px 20px rgba(0,0,0,0.05)",
