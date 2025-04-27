@@ -1,0 +1,7 @@
+.App {
+  padding: 2em;
+}
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(81, 81, 81);
+}
