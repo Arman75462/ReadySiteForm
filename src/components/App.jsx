@@ -111,11 +111,11 @@ function App() {
         >
           <MenuItem value="Modern">Moderne</MenuItem>
           <MenuItem value="Professional">Professionnel</MenuItem>
-          <MenuItem value="Creative">Créatif</MenuItem>
           <MenuItem value="Luxury">Luxueux</MenuItem>
           <MenuItem value="Minimalist">Minimaliste</MenuItem>
-          <MenuItem value="Bold">Audacieux</MenuItem>
           <MenuItem value="Friendly">Amical</MenuItem>
+          <MenuItem value="Auto">Choisissez pour moi</MenuItem>
+          <MenuItem value="Other">Autre</MenuItem>
         </TextField>
         <TextField
           name="mainColor"
@@ -127,6 +127,15 @@ function App() {
           InputLabelProps={{ shrink: true }}
         />
         <TextField
+          name="chooseForMe"
+          label="Écrivez ici si vous voulez que nous choisissions la couleur"
+          helperText="Si vous ne savez pas quelle couleur choisir, nous en choisirons une pour vous. Sinon, laissez ce champ vide."
+          type="text"
+          fullWidth
+          sx={{ marginTop: 2 }}
+        />
+
+        <TextField
           name="colorTheme"
           label="Thème de couleur"
           helperText="Thème clair ou sombre"
@@ -137,6 +146,8 @@ function App() {
         >
           <MenuItem value="Light">Clair</MenuItem>
           <MenuItem value="Dark">Sombre</MenuItem>
+          <MenuItem value="Auto">Choisissez pour moi</MenuItem>
+          <MenuItem value="Other">Autre</MenuItem>
         </TextField>
 
         {/* Section Title */}
@@ -194,7 +205,7 @@ function App() {
         <TextField
           name="services"
           label="Services offerts"
-          helperText="Séparez chaque service par une virgule"
+          helperText="Séparez chaque service offert par une virgule"
           variant="outlined"
           multiline
           minRows={3}
