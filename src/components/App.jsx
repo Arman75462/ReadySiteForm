@@ -277,7 +277,7 @@ function App() {
         <input
           type="hidden"
           name="_next"
-          value="https://readysite.netlify.app/merci"
+          value="https://readysite-form.netlify.app/merci"
         />
 
         {/* Submit Button */}
