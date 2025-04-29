@@ -7,7 +7,7 @@ const routes = [
     element: <App />,
   },
   {
-    path: "merci",
+    path: "/merci",
     element: <ThankYou />,
   },
 ];

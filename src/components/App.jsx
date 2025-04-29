@@ -31,7 +31,7 @@ function App() {
 
       <Box
         component="form"
-        action="https://formsubmit.co/allolol026@gmail.com"
+        action="https://formsubmit.co/armangulistani@gmail.com"
         method="POST"
         className="App__form"
         sx={{
@@ -275,7 +275,7 @@ function App() {
         (instead of showing Formsubmit’s default thank-you page) */}
         <input
           type="hidden"
-          name="_redirect"
+          name="_next"
           value="https://readysite-form.netlify.app/merci"
         />
 
