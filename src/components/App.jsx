@@ -31,7 +31,7 @@ function App() {
 
       <Box
         component="form"
-        action="https://formsubmit.co/armangulistani@gmail.com"
+        action="https://formsubmit.co/allolol026@gmail.com"
         method="POST"
         className="App__form"
         sx={{
@@ -50,7 +50,7 @@ function App() {
           Informations de base
         </Typography>
         <TextField
-          name="businessName"
+          name="Business Name"
           label="Nom de l'entreprise"
           helperText="Sera utilisé comme nom du site"
           variant="outlined"
@@ -58,7 +58,7 @@ function App() {
           fullWidth
         />
         <TextField
-          name="contactEmail"
+          name="Client contact email"
           label="Courriel"
           helperText="Entrez le courriel où vous souhaitez recevoir vos messages clients"
           type="email"
@@ -67,7 +67,7 @@ function App() {
           fullWidth
         />
         <TextField
-          name="instagram"
+          name="Instagram account username"
           label="Compte Instagram"
           helperText="Nom d'utilisateur Instagram"
           required
@@ -75,7 +75,7 @@ function App() {
           fullWidth
         />
         <TextField
-          name="facebook"
+          name="Facebook account username"
           label="Compte Facebook"
           helperText="Nom d'utilisateur Facebook"
           required
@@ -124,7 +124,6 @@ function App() {
           type="color"
           required
           fullWidth
-          InputLabelProps={{ shrink: true }}
         />
         <TextField
           name="chooseForMe"
@@ -136,7 +135,7 @@ function App() {
         />
 
         <TextField
-          name="colorTheme"
+          name="Website color theme"
           label="Thème de couleur"
           helperText="Thème clair ou sombre"
           variant="outlined"
@@ -276,7 +275,7 @@ function App() {
         (instead of showing Formsubmit’s default thank-you page) */}
         <input
           type="hidden"
-          name="_next"
+          name="_redirect"
           value="https://readysite-form.netlify.app/merci"
         />
 
