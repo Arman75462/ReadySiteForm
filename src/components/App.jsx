@@ -31,7 +31,7 @@ function App() {
 
       <Box
         component="form"
-        action="https://formsubmit.co/allolol026@gmail.com"
+        action="https://formsubmit.co/9ef40d560c5c543946c910d9161beda0"
         method="POST"
         className="App__form"
         sx={{
