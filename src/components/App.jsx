@@ -3,7 +3,7 @@ import { TextField, Button, Box, MenuItem, Typography } from "@mui/material";
 
 function App() {
   return (
-    <main className="App">
+    <main className="App page-appearance-animation">
       {/* Main Title */}
       <Typography
         variant="h3"
@@ -25,13 +25,13 @@ function App() {
         sx={{ maxWidth: "600px", margin: "0 auto" }}
       >
         Remplissez ce formulaire pour nous transmettre les informations
-        essentielles. Nous créerons rapidement un site professionnel adapté à
-        votre entreprise.
+        essentielles. Nous créerons <span>rapidement</span> un site
+        professionnel adapté à votre entreprise.
       </Typography>
 
       <Box
         component="form"
-        action="https://formsubmit.co/9ef40d560c5c543946c910d9161beda0"
+        action="https://formsubmit.co/fdd06868f6700a4600bdaae966dd083a"
         method="POST"
         className="App__form"
         sx={{
@@ -45,7 +45,9 @@ function App() {
           margin: "2rem auto",
         }}
       >
-        {/* Section Title */}
+        {/*===============================================
+         ============BUSINESS BASIC INFO INPUTS===========
+         ================================================*/}
         <Typography variant="h5" fontWeight="bold" mb={1} color="#0B1215">
           Informations de base
         </Typography>
@@ -55,6 +57,23 @@ function App() {
           helperText="Sera utilisé comme nom du site"
           variant="outlined"
           required
+          fullWidth
+        />
+        <TextField
+          name="businessPhone"
+          label="Numéro de téléphone"
+          helperText="Sera affiché sur la page Contact pour que vos clients puissent vous joindre facilement."
+          type="tel"
+          variant="outlined"
+          required
+          fullWidth
+        />
+
+        <TextField
+          name="businessAddress"
+          label="Adresse de l’entreprise (si applicable)"
+          helperText="Utile pour afficher une carte Google Maps et renforcer votre crédibilité locale."
+          variant="outlined"
           fullWidth
         />
         <TextField
@@ -90,7 +109,9 @@ function App() {
           fullWidth
         />
 
-        {/* Section Title */}
+        {/*===============================================
+         ============WEBSITE ATMOSPHERE INPUTS=============
+         ================================================*/}
         <Typography
           variant="h5"
           fontWeight="bold"
@@ -149,7 +170,9 @@ function App() {
           <MenuItem value="Other">Autre</MenuItem>
         </TextField>
 
-        {/* Section Title */}
+        {/*==============================================================
+         ==============BUSINESS STATS AND WHO WE ARE INPUTS==============
+         ================================================================*/}
         <Typography
           variant="h5"
           fontWeight="bold"
@@ -159,6 +182,35 @@ function App() {
         >
           Informations sur l'entreprise
         </Typography>
+        <TextField
+          name="aboutWhoWeAre"
+          label="Qui êtes-vous ?"
+          helperText="Présentez brièvement votre entreprise. Ce texte servira à bâtir une section 'À propos' qui donne confiance aux visiteurs."
+          variant="outlined"
+          fullWidth
+          multiline
+          minRows={3}
+        />
+
+        <TextField
+          name="aboutStory"
+          label="Votre histoire / Parcours"
+          helperText="Expliquez comment votre entreprise a commencé. Ce contenu humanise votre marque et capte l’attention sur la page 'À propos'."
+          variant="outlined"
+          fullWidth
+          multiline
+          minRows={3}
+        />
+
+        <TextField
+          name="aboutMission"
+          label="Votre mission ou philosophie"
+          helperText="Exprimez vos valeurs, votre vision ou votre approche unique. Cela permet aux visiteurs de s’identifier à votre entreprise."
+          variant="outlined"
+          fullWidth
+          multiline
+          minRows={3}
+        />
         <TextField
           name="yearsExperience"
           label="Années d'expérience"
@@ -191,7 +243,36 @@ function App() {
           fullWidth
         />
 
-        {/* Section Title */}
+        {/*===============================================
+         ================OPENING HOURS INPUTS=============
+         ================================================*/}
+        <Typography
+          variant="h5"
+          fontWeight="bold"
+          mt={4}
+          mb={1}
+          color="#0B1215"
+        >
+          Heures d'ouverture
+        </Typography>
+        <TextField
+          name="weekdayHours"
+          label="Heures d'ouverture en semaine (si applicable)"
+          helperText="Ex: Lun–Ven, 9h–18h"
+          variant="outlined"
+          fullWidth
+        />
+        <TextField
+          name="weekendHours"
+          label="Heures d'ouverture la fin de semaine (si applicable)"
+          helperText="Ex: Sam–Dim, 10h–16h"
+          variant="outlined"
+          fullWidth
+        />
+
+        {/*===============================================
+         ===========SERVICES AND PRICES INPUTS============
+         ================================================*/}
         <Typography
           variant="h5"
           fontWeight="bold"
@@ -222,33 +303,9 @@ function App() {
           fullWidth
         />
 
-        {/* Section Title */}
-        <Typography
-          variant="h5"
-          fontWeight="bold"
-          mt={4}
-          mb={1}
-          color="#0B1215"
-        >
-          Heures d'ouverture
-        </Typography>
-        <TextField
-          name="weekdayHours"
-          label="Heures d'ouverture en semaine"
-          helperText="Ex: Lun–Ven, 9h–18h"
-          variant="outlined"
-          required
-          fullWidth
-        />
-        <TextField
-          name="weekendHours"
-          label="Heures d'ouverture la fin de semaine"
-          helperText="Ex: Sam–Dim, 10h–16h"
-          variant="outlined"
-          fullWidth
-        />
-
-        {/* Section Title */}
+        {/*===============================================
+         =============ADDITIONAL PAGES INPUT==============
+         ================================================*/}
         <Typography
           variant="h5"
           fontWeight="bold"
@@ -268,6 +325,27 @@ function App() {
           fullWidth
         />
 
+        {/*===============================================
+          ===============IMAGE UPLOAD NOTICE==============
+          ================================================*/}
+        <Typography
+          variant="h5"
+          fontWeight="bold"
+          mt={4}
+          mb={1}
+          color="#0B1215"
+        >
+          Images à fournir (logo, services, etc.)
+        </Typography>
+        <Typography variant="body2" color="gray" mb={2}>
+          Veuillez envoyer votre logo, vos images de services ou toute autre
+          image à l'adresse suivante :
+          <strong style={{ color: "#1976d2" }}>
+            {" "}
+            readysite.team@gmail.com
+          </strong>
+        </Typography>
+
         {/* Prevents Formsubmit from showing a CAPTCHA popup before sending the message */}
         <input type="hidden" name="_captcha" value="false" />
 
@@ -279,7 +357,9 @@ function App() {
           value="https://readysite-form.netlify.app/merci"
         />
 
-        {/* Submit Button */}
+        {/*===============================================
+          ===================SUBMIT BUTTON================
+          ================================================*/}
         <Button
           type="submit"
           variant="contained"

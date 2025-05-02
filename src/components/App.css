@@ -2,6 +2,11 @@
   padding: 2em;
 }
 
+span {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
   border-color: rgb(81, 81, 81);
 }
